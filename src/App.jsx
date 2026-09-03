@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="min-h-screen bg-brand-dark text-white font-sans selection:bg-brand-gold selection:text-brand-dark overflow-x-hidden">
       <Navbar />
-      <Hero />
+      <Hero onExplore={handleExploreSuits} />
       <Craft />
       <Suits onExplore={handleExploreSuits} />
       <Kids onExplore={handleExploreKids} />
