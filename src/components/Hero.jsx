@@ -55,15 +55,9 @@ const Hero = ({ onExplore }) => {
           </p>
           
           {/* Buttons */}
-<<<<<<< HEAD
-          <div className="flex flex-wrap items-center mb-4 justify-end gap-6">
+          <div className="flex flex-wrap items-center justify-end gap-6">
             <button onClick={onExplore} className="relative overflow-hidden group bg-brand-gold text-brand-dark px-10 py-4 rounded-full font-bold transition-all duration-500 hover:shadow-[0_0_30px_rgba(196,161,100,0.5)] hover:-translate-y-1">
               <span className="relative z-10 transition-colors duration-500">استكشف المجموعة</span>
-=======
-          <div className="flex flex-wrap items-center justify-end gap-6">
-            <button className="relative overflow-hidden group bg-brand-gold text-brand-dark px-10 py-4 rounded-full font-bold transition-all duration-500 hover:shadow-[0_0_30px_rgba(196,161,100,0.5)] hover:-translate-y-1">
-              <a href="#االمجموعة" className="relative z-10 transition-colors duration-500">استكشف المجموعة</a>
->>>>>>> 8037d621fa534490114db3a926289405d446550a
               <div className="absolute inset-0 h-full w-0 bg-white group-hover:w-full transition-all duration-500 ease-out z-0 opacity-20"></div>
             </button>
             
