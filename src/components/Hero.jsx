@@ -38,24 +38,24 @@ const Hero = ({ onExplore }) => {
           </div>
           
           {/* Main Title */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] mb-6">
             الأناقة ليست مجرد <br/>
             <span className="relative inline-block mt-4">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-400 to-brand-gold">ملابس</span>
               <div className="absolute -bottom-2 left-0 w-full h-[6px] bg-brand-gold/40 rounded-full blur-[2px]"></div>
             </span>
-            <span className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white/80 block mt-4">
+            <span className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white/80 block mt-4">
               بل حضور <span className="text-brand-gold">لا يُنسى</span>
             </span>
           </h1>
           
           {/* Description */}
-          <p className="text-brand-gray text-xl mb-12 leading-relaxed max-w-xl ml-auto font-light border-r-4 border-brand-gold/50 pr-6">
+          <p className="text-brand-gray text-lg md:text-xl mb-12 leading-relaxed max-w-xl ml-auto font-light border-r-4 border-brand-gold/50 pr-6">
             بدل رجالية مفصلة بعناية فائقة من أرقى الأقمشة الإيطالية. تُصنع خصيصاً على مقاسك لتمنحك ثقةً تُرى وتُحس قبل أن تُنطق بكلمة.
           </p>
           
           {/* Buttons */}
-          <div className="flex flex-wrap items-center justify-end gap-6">
+          <div className="flex flex-wrap items-center mb-4 justify-center md:justify-end gap-6">
             <button onClick={onExplore} className="relative overflow-hidden group bg-brand-gold text-brand-dark px-10 py-4 rounded-full font-bold transition-all duration-500 hover:shadow-[0_0_30px_rgba(196,161,100,0.5)] hover:-translate-y-1">
               <span className="relative z-10 transition-colors duration-500">استكشف المجموعة</span>
               <div className="absolute inset-0 h-full w-0 bg-white group-hover:w-full transition-all duration-500 ease-out z-0 opacity-20"></div>

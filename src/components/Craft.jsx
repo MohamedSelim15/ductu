@@ -24,7 +24,7 @@ const Craft = () => {
               <span className="text-brand-gold text-sm font-bold tracking-widest uppercase">حرفتنا</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
               من القماش الخام إلى <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-brand-gold to-yellow-600">
                 قطعة تحمل اسمك
@@ -66,7 +66,7 @@ const Craft = () => {
           {/* Left Side: Creative Image */}
           <div className="flex-1 w-full order-1 lg:order-2 relative mt-10 lg:mt-0">
             {/* Background Frame */}
-            <div className="absolute inset-0 border-2 border-brand-gold/30 rounded-3xl transform translate-x-6 -translate-y-6 lg:translate-x-10 lg:-translate-y-10 -z-10"></div>
+            <div className="absolute inset-0 border-2 border-brand-gold/30 rounded-3xl transform translate-x-4 -translate-y-4 md:translate-x-6 md:-translate-y-6 lg:translate-x-10 lg:-translate-y-10 -z-10"></div>
             
             <div className="relative rounded-3xl overflow-hidden group shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
               <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10"></div>

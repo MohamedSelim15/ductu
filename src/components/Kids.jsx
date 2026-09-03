@@ -19,7 +19,7 @@ const Kids = ({ onExplore }) => {
               <span className="text-brand-gold text-sm font-bold tracking-widest uppercase">قسم الأطفال</span>
             </div>
             
-            <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
               أناقة لا تعترف <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-l from-brand-gold to-yellow-600">
                 بالعمر
@@ -64,19 +64,19 @@ const Kids = ({ onExplore }) => {
           </div>
 
           {/* Creative Image Composition */}
-          <div className="flex-1 w-full relative h-[500px] md:h-[600px] mt-10 lg:mt-0">
+          <div className="flex-1 w-full min-h-[400px] md:min-h-[600px] shrink-0 relative mt-10 lg:mt-0">
             {/* Main Image */}
             <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10 border border-white/10 group">
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent z-10"></div>
               <img 
                 src="/Kids.jpeg" 
                 alt="بدل أطفال" 
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 origin-bottom"
+                className="relative z-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 origin-bottom"
               />
             </div>
             
             {/* Floating Badge */}
-            <div className="absolute -left-6 top-1/4 z-30 bg-white/5 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-2xl flex items-center gap-4 animate-[pulse_4s_infinite]">
+            <div className="absolute left-2 md:-left-4 top-1/16 z-30 bg-white/5 backdrop-blur-xl border border-white/20 p-5 rounded-2xl shadow-2xl flex items-center gap-4 animate-[pulse_4s_infinite]">
               <div className="text-right">
                 <div className="text-brand-gold font-bold text-lg">أناقة موازية</div>
                 <div className="text-brand-gray text-xs">للأب والابن</div>

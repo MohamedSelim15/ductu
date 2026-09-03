@@ -21,7 +21,7 @@ const Suits = ({ onExplore }) => {
               <span className="text-brand-gold text-sm font-bold tracking-widest uppercase">البدل الرجالية</span>
             </div>
             
-            <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
               فن تفصيل <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600">
                 الشخصية
@@ -60,14 +60,14 @@ const Suits = ({ onExplore }) => {
           </div>
 
           {/* Creative Image Composition */}
-          <div className="flex-1 w-full relative order-1 lg:order-2 h-[500px] md:h-[600px]">
+          <div className="flex-1 w-full min-h-[400px] md:min-h-[600px] shrink-0 relative order-1 lg:order-2 mt-8 lg:mt-0">
             {/* Main Image */}
             <div className="absolute right-0 top-0 w-3/4 h-4/5 rounded-3xl overflow-hidden shadow-2xl z-10 border border-white/10 group">
               <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-all duration-700 z-10"></div>
               <img 
                 src={suitClassic} 
                 alt="بدلة كلاسيك" 
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                className="relative z-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
               />
             </div>
             
@@ -77,12 +77,12 @@ const Suits = ({ onExplore }) => {
               <img 
                 src={suitWedding} 
                 alt="بدلة زفاف" 
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                className="relative z-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
               />
             </div>
 
             {/* Floating Badge */}
-            <div className="absolute -right-6 md:-right-10 top-1/2 -translate-y-1/2 z-30 bg-brand-dark/80 backdrop-blur-md border border-brand-gold/30 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-[bounce_4s_infinite]">
+            <div className="absolute right-2 md:-right-10 top-1/2 -translate-y-1/2 z-30 bg-brand-dark/80 backdrop-blur-md border border-brand-gold/30 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-[bounce_4s_infinite]">
               <div className="text-right">
                 <div className="text-brand-gold font-black text-2xl">١٩٨٥</div>
                 <div className="text-white text-xs">تاريخ من الأناقة</div>

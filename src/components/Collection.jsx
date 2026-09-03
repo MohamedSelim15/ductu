@@ -27,7 +27,7 @@ const Collection = ({ activeCategory, setActiveCategory }) => {
       <div className="absolute top-1/2 right-1/4 w-[800px] h-[800px] bg-brand-gold/5 rounded-full blur-[150px] pointer-events-none"></div>
       
       {/* Watermark */}
-      <div className="absolute left-1/2 top-20 -translate-x-1/2 text-[10rem] md:text-[15rem] font-black text-white/[0.02] tracking-widest pointer-events-none select-none whitespace-nowrap">
+      <div className="absolute left-1/2 top-20 -translate-x-1/2 text-[6rem] md:text-[10rem] lg:text-[15rem] font-black text-white/[0.02] tracking-widest pointer-events-none select-none whitespace-nowrap">
         GALLERY
       </div>
 
@@ -40,7 +40,7 @@ const Collection = ({ activeCategory, setActiveCategory }) => {
             <span className="text-brand-gold text-sm font-bold tracking-widest uppercase">المجموعة الحصرية</span>
             <span className="h-[2px] w-12 bg-gradient-to-l from-transparent to-brand-gold"></span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">
             أحدث <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600">التصاميم</span>
           </h2>
           <p className="text-brand-gray text-lg max-w-2xl mx-auto font-light leading-relaxed">
@@ -49,12 +49,12 @@ const Collection = ({ activeCategory, setActiveCategory }) => {
         </div>
 
         {/* Filters */}
-        <div className="flex justify-center flex-wrap gap-4 mb-16">
+        <div className="flex justify-center flex-wrap gap-2 md:gap-4 mb-12 md:mb-16">
           {categories.map(category => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`relative px-8 py-3 rounded-full font-bold transition-all duration-500 overflow-hidden group ${
+              className={`relative px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-full font-bold transition-all duration-500 overflow-hidden group ${
                 activeCategory === category 
                   ? 'text-brand-dark bg-brand-gold shadow-[0_0_20px_rgba(196,161,100,0.4)]' 
                   : 'text-brand-gray bg-white/5 border border-white/10 hover:border-brand-gold/50'
